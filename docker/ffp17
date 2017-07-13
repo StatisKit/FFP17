@@ -1,0 +1,28 @@
+FROM statiskit/ubuntu
+
+RUN git clone http://github.com/StatisKit/FFP17
+RUN cd FFP17 && conda env create -f environment.yml
+
+RUN echo "echo \"##############################################################################\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"# Welcome to the Docker container that enables you to run examples presented #\"" >> $HOME/.bashrc
+RUN echo "echo \"# in the *Multinomial Splitting Models for Multivariate Counts* paper. After #\""
+RUN echo "echo \"$ launching this container using the following commmand line,                #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"#    docker run -i -t -p 8888:8888 statiskit/FFP17                           #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"# you can run examples as follows,                                           #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"# 1. Launch the Jupyter notebook with the following command                  #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"#        jupyter notebook index.ipynb --ip='*' --port=8888 --no-browser      #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"# 2. Copy the URL given in the terminal and paste it in your browser.        #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"# 3. Click on Run All item of the Cell top menu bar.                         #\"" >> $HOME/.bashrc
+RUN echo "echo \"#                                                                            #\"" >> $HOME/.bashrc
+RUN echo "echo \"##############################################################################\"" >> $HOME/.bashrc
+
+RUN echo "source activate FFP17" >> $HOME/.bashrc
+
+WORKDIR /home/main/FFP17

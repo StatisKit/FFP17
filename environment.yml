@@ -1,0 +1,18 @@
+name: FFP17
+channels:
+  - statiskit
+  - conda-forge
+  - r
+dependencies:
+  - r-essentials
+  - r-glasso
+  - rpy2
+  - pandas
+  - matplotlib
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
+  - python-statiskit_linalg
+  - python-statiskit_core
+  - python-statiskit_glm
+  - python-statiskit_pgm
