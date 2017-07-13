@@ -28,6 +28,9 @@ install:
   - git clone https://github.com/StatisKit/travis-ci.git travis-ci
   - cd travis-ci
   - source install.sh
+  - if [[ "$TRAVIS_OS_NAME" = "linux" && "$RECIPE" = "r-glasso" ]]; then
+      sudo apt-get install gfortran;
+    fi
 
 before_script:
   - source before_script.sh
