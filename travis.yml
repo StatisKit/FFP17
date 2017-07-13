@@ -30,7 +30,8 @@ install:
   - source install.sh
   - if [[ "$TRAVIS_OS_NAME" = "linux" && "$RECIPE" = "r-glasso" ]]; then
       sudo apt-get install gfortran;
-    else
+    fi
+  - if [[ "$TRAVIS_OS_NAME" = "osx" && "$RECIPE" = "r-glasso" ]]; then
       curl -O https://kingaa.github.io/scripts/mac-fortran.sh;
       sh mac-fortran.sh;
     fi
