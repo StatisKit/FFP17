@@ -8,7 +8,7 @@ package:
 source:
   fn: glasso_1.8.tar.gz
   url:
-    - hhttps://cran.r-project.org/src/contrib/glasso_1.8.tar.gz
+    - https://cran.r-project.org/src/contrib/glasso_1.8.tar.gz
 
 build:
   number: 0
