@@ -2,3 +2,4 @@
 *.pgf
 .ipynb_checkpoints
 cache
+misc/results
