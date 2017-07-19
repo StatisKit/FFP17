@@ -4,6 +4,7 @@ channels:
   - conda-forge
   - r
 dependencies:
+  - python=2.7
   - r-essentials
   - r-glasso
   - rpy2
