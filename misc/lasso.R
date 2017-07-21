@@ -1,7 +1,7 @@
 library(glasso)
 #setwd("/home/adjamagattefall/Desktop/stage03avr")
 ###########Lecture des donnees ###########
-dat <- read.csv("data.csv",sep = " ",h=F)
+dat <- read.csv("results/data.csv",sep = " ",h=F)
 sigma <- cov(dat)
 
 ################# Des valeurs de lamda = sigma inverse #################
@@ -12,6 +12,6 @@ d = length(lamda)
 j=1
 for(i in lamda){
   lasso.res  <- glasso(sigma,rho =i)
-  write.table(lasso.res$wi, paste("lassolin_", j, ".csv", sep=''), row.names=FALSE,col.names = FALSE, sep =" ")
+  write.table(lasso.res$wi, paste("lasso_", j, ".csv", sep=''), row.names=FALSE,col.names = FALSE, sep =" ")
   j=j+1
 }

@@ -1,11 +1,9 @@
 library(glasso)
-#setwd("/home/adjamagattefall/Desktop/stage03avr")
-###########Lecture des donnees ###########
-dat <- read.csv("data.csv",sep = " ",h=F)
+dat <- read.csv("results/data.csv",sep = " ",h=F)
 sigma <- cov(dat)
 
 ################# Des valeurs de lamda = sigma inverse #################
-siginv <- sigma # les val de linverse tous < 1<<<
+siginv <- sigma # les val de linverse tous < 1
 lamda <- c(siginv[ upper.tri(siginv,diag = TRUE) ],0.001)
 lamda <- abs(lamda)  
 lamda <- sort(lamda,decreasing = TRUE)
