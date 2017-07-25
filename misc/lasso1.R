@@ -4,7 +4,7 @@ sigma <- cov(dat)
 
 ################# Des valeurs de lamda = sigma inverse #################
 siginv <- sigma # les val de linverse tous < 1
-lamda <- c(siginv[ upper.tri(siginv,diag = TRUE) ],0.001)
+lamda <- c(siginv[ upper.tri(siginv,diag = FALSE) ],0.001)
 lamda <- abs(lamda)  
 lamda <- sort(lamda,decreasing = TRUE)
 d = length(lamda)
