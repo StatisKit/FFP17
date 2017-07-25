@@ -1,14 +1,16 @@
-source activate root
+# bash update.sh
 
-git add -A
-git commit -a -m 'Update'
-git pull
-git push
+source activate root
 
 conda env remove -n FFP17
 conda clean --all -y
 conda env update -f environment.yml
 source activate FFP17
+
+git add -A
+git commit -a -m 'Update'
+git pull
+git push
 
 # source activate statiskit-python
 
