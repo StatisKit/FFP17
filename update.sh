@@ -2,7 +2,7 @@
 
 source activate root
 
-conda env remove -n FFP17
+conda env remove -n FFP17 -y
 conda clean --all -y
 conda env update -f environment.yml
 source activate FFP17
