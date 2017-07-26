@@ -7,7 +7,7 @@ siginv <- sigma # les val de linverse tous < 1
 lamda <- c(siginv[ upper.tri(siginv,diag = FALSE) ],0.001)
 lamda <- abs(lamda)  
 lamda <- sort(lamda,decreasing = TRUE)
-d = length(lamda)
+#d = length(lamda)
 ############ON TOURNE LE LASSO POUR CHAQUE LAMDA##########
 j=1
 for(i in lamda){

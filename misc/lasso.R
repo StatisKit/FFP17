@@ -3,9 +3,9 @@ library(glasso)
 ###########Lecture des donnees ###########
 dat <- read.csv("results/data.csv",sep = " ",h=F)
 sigma <- cov(dat)
-d = d=length(dat)
+d = length(dat)
 ################# Des valeurs de lamda = sigma inverse #################
-lambda = seq(0.001,max(sigma),length.out = d*(d-1)/2)
+lambda = seq(0.001,max(sigma),length.out = 1 + d*(d+1)/2)
 lambda = sort(lambda,decreasing = TRUE)
 
 ############ON TOURNE LE LASSO POUR CHAQUE LAMDA##########

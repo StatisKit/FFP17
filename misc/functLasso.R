@@ -5,10 +5,10 @@ LASSO <- function(dat,penality){
   sigma <- cov(dat)
   #penalité linéaire
   if (penality == "LINEAIR")
-    lamda <- seq(0.001,max(sigma),length.out = d*(d-1)/2)
+    lamda <- seq(0.001,max(sigma),length.out = 1+d*(d+1)/2)
   #penalité avec les val de sigma
   else 
-    lamda <- c(sigma[ upper.tri(sigma,diag = FALSE) ],0.001)
+    lamda <- c(sigma[ upper.tri(sigma,diag = TRUE) ],0.001)
   
   lamda <- sort(abs(lamda),decreasing = TRUE)
   
