@@ -39,8 +39,4 @@ graph [
     id 9
     label 9
   ]
-  edge [
-    source 3
-    target 6
-  ]
 ]
