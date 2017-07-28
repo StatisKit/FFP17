@@ -12,7 +12,7 @@ services:
 env:
   - CONDA_RECIPE=r-glasso
   - CONDA_ENVIRONMENT=FFP17
-    JUPYTER_NOTEBOOK=simulation.ipynb
+    JUPYTER_NOTEBOOK=sampling.ipynb
   - CONDA_ENVIRONMENT=FFP17
     JUPYTER_NOTEBOOK=estimation.ipynb
   - CONDA_ENVIRONMENT=FFP17
@@ -28,10 +28,10 @@ install:
   - git clone https://github.com/StatisKit/travis-ci.git travis-ci
   - cd travis-ci
   - source install.sh
-  - if [[ "$TRAVIS_OS_NAME" = "linux" && "$RECIPE" = "r-glasso" ]]; then
+  - if [[ "$TRAVIS_OS_NAME" = "linux" && "$CONDA_RECIPE" = "r-glasso" ]]; then
       sudo apt-get install gfortran;
     fi
-  - if [[ "$TRAVIS_OS_NAME" = "osx" && "$RECIPE" = "r-glasso" ]]; then
+  - if [[ "$TRAVIS_OS_NAME" = "osx" && "$CONDA_RECIPE" = "r-glasso" ]]; then
       curl -O https://kingaa.github.io/scripts/mac-fortran.sh;
       sh mac-fortran.sh;
     fi
