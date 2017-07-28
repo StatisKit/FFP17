@@ -12,7 +12,7 @@ services:
 env:
   - CONDA_RECIPE=r-glasso
   - CONDA_ENVIRONMENT=FFP17
-    JUPYTER_NOTEBOOK=simulation.ipynb
+    JUPYTER_NOTEBOOK=sampling.ipynb
   - CONDA_ENVIRONMENT=FFP17
     JUPYTER_NOTEBOOK=estimation.ipynb
   - CONDA_ENVIRONMENT=FFP17
