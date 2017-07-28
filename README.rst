@@ -5,8 +5,8 @@
    :target: https://ci.appveyor.com/api/projects/status/jbvyy4sko6bhorx2/branch/master
 
 
-FFP17: Supplementary Material for Computational Studies 
-#######################################################
+FFP17: Supplementary Material for Computational Studies for Adja Magatte Fall Intership
+#######################################################################################
 
 This repository contains supplementary material for the reproducibiliy of computational studies performed in the report *Learning high dimensional gaussian graphical models* written by Adja Magatte Fall under the supervision of:
 
