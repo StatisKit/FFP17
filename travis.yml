@@ -14,9 +14,11 @@ env:
   - CONDA_ENVIRONMENT=FFP17
     JUPYTER_NOTEBOOK=sampling.ipynb
   - CONDA_ENVIRONMENT=FFP17
-    JUPYTER_NOTEBOOK=estimation.ipynb
+    JUPYTER_NOTEBOOK=algorithms.ipynb
   - CONDA_ENVIRONMENT=FFP17
-    JUPYTER_NOTEBOOK=selection.ipynb
+    JUPYTER_NOTEBOOK=paths.ipynb
+  - CONDA_ENVIRONMENT=FFP17
+    JUPYTER_NOTEBOOK=criteria.ipynb
   - DOCKERFILE=ffp17
 
 matrix:
