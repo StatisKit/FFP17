@@ -1,7 +1,4 @@
 *.svg
 *.pgf
 .ipynb_checkpoints
-cache
-misc/results
-misc/lasso*.csv
 .Rhistory
