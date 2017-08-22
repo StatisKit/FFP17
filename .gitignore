@@ -2,3 +2,5 @@
 *.pgf
 .ipynb_checkpoints
 .Rhistory
+data.csv
+graph.gml
